@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit recipe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <a href="index.html" class="homelink"><i class="bi bi-arrow-return-left"></i> back</a>
+            <input class="edit__title" id="edit-title" type="text" placeholder="Recipe title">
+            <ol class="edit__steps">
+                <li class="edit__step"> ...<br></br></li>
+                <li class="edit__step"> ...<br></br></li>
+                <li class="edit__step"> ...<br></br></li>
+            </ol>
+            <h3>Ingredients</h3>
+            <div class="ingredients" id="ingredients">
+            </div>
+            <form class="ingredient">
+                <input class="ingredient" id="ingredient" type="text" placeholder="Add ingredient">
+                <button class="ingredient" id="add-btn">Add</button>
+            </form>
+        </div><!-- /main -->
+        <h3>Danger zone</h3>
+        <button class="page" id="remove-btn">DELETE recipe</button>
+    </div><!-- /container -->
+
+    <script src="./scripts/edit-bundle.js"></script>
+</body>
+</html>
